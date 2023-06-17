@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - Coding With Dani</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/checkout.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Checkout</h1>
+            </header>
+            <form action="/payment" class="form" method="GET">
+                <div>
+                    <h2>Item</h2>
+                    <div class="card"><item>
+                             Premium Plan 
+                        </item>
+                    </div>
+                </div>
+                <fieldset><legend>Payment Method</legend>
+                    <div class="form__radios">
+                        <div class="form__radio"><label for="e-wallet">E-Wallet</label> <input checked id="e-wallet" type="radio">
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <h2>Shopping Bill</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                              <td>Shipping Fee</td>
+                              <td align="right">Rp. 0</td>
+                            </tr>
+                            <tr>
+                              <td>Price Total</td>
+                              <td align="right">Rp. 50.000</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                              <td style="color: white">Total</td>
+                              <td style="color: white" align="right">Rp. 50.000</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div><button class="button button--full" type="submit">Buy Now</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

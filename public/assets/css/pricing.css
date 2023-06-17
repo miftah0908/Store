@@ -1,0 +1,83 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 2em;
+  box-shadow: 0 0 10px white;
+  text-align: center;
+  background-color: #121212;
+}
+
+.pricing-card h2 {
+  color: white;
+}
+
+.pricing-card h3 {
+  color: lightgray;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-card li {
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    margin-bottom: 5px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    /*transform: rotate(1deg);*/
+    transition: .2s;
+}
+
+/*
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  /*transform: rotate(1deg);*/
+  transition: .2s;
+}*/
+
+@media (max-width: 768px) {
+  .pricing-card {
+    width: 100%;
+  }
+}
